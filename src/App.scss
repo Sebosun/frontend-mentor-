@@ -2,7 +2,32 @@
 
 .App {
   height: 100%;
+  color: #eee;
   font-weight: 300;
   padding: 0;
   margin: 0;
+}
+
+.wrapper {
+  padding: 2em;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  color: $paleBlue;
+}
+
+li {
+  color: $desaturatedBlue;
+  font-weight: 400;
 }
