@@ -1,9 +1,25 @@
-export default function Card() {
+import "./Card.scss";
+import ellipsis from "../images/icon-ellipsis.svg";
+
+interface props {
+  activity: string;
+  hours: number;
+  last_week: number;
+  icon: string;
+}
+
+export default function Card({ icon, activity, hours, last_week }: props) {
   return (
-    <div>
-      <p>activity</p>
-      <p>hours</p>
-      <p>Last week - last_week</p>
+    <div className="card">
+      <div className="card__modal">
+        <img src={icon} />
+      </div>
+      <div className="card__activity">
+        <p className="activity">{activity}</p>
+        <img className="icon" src={ellipsis} alt="ellipsis" />
+        <p className="hours">{hours}hrs</p>
+        <p className="last_week">Last week - {last_week}hrs</p>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+.card {
+  border-radius: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  background: $lightRedWork;
+  &__modal {
+    height: 2.4em;
+    overflow: hidden;
+    text-align: right;
+    img {
+      position: relative;
+      right: 1em;
+      bottom: 0.7em;
+    }
+  }
+  &__activity {
+    position: relative;
+    top: 2px;
+    background: $darkBlue;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 1fr;
+
+    padding-inline: 1.5em;
+
+    .activity {
+      font-size: 16px;
+      justify-self: left;
+      text-transform: capitalize;
+      font-weight: 400;
+      color: white;
+    }
+
+    .hours {
+      font-size: 2em;
+      padding: 0;
+      margin: 0;
+      font-weight: 300;
+      color: white;
+    }
+
+    .last_week {
+      justify-self: right;
+    }
+
+    .icon {
+      justify-self: right;
+      align-self: end;
+      margin-bottom: 9px;
+      cursor: pointer;
+    }
+  }
+}
