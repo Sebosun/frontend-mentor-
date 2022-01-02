@@ -10,7 +10,7 @@ interface props {
 
 export default function Card({ icon, activity, hours, last_week }: props) {
   return (
-    <div className="card">
+    <div className={`card ${activity}`}>
       <div className="card__modal">
         <img src={icon} />
       </div>
