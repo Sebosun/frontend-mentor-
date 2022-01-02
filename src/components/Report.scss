@@ -93,5 +93,15 @@
         margin-bottom: 25px;
       }
     }
+    &__list {
+      display: flex;
+      padding: 2em;
+      li {
+        margin-top: 1em;
+      }
+      li:first-child {
+        margin-top: 0em;
+      }
+    }
   }
 }
