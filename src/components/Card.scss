@@ -17,6 +17,7 @@
     }
   }
 
+  overflow: hidden;
   &__activity {
     position: relative;
     top: 2px;
@@ -28,6 +29,7 @@
     grid-template-rows: 40% 1fr;
     padding-inline: 1.5em;
 
+    height: 100%;
     .activity {
       font-size: 16px;
       justify-self: left;
