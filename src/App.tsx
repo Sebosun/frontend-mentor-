@@ -14,12 +14,14 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <Report name="Jeremy Robson" image={jeremy} active="weekly" />
-        <Card icon={work} activity="work" hours={32} last_week={10} />
-        <Card icon={play} activity="play" hours={2} last_week={3} />
-        <Card icon={study} activity="study" hours={3} last_week={24} />
-        <Card icon={exercise} activity="exercise" hours={11} last_week={22} />
-        <Card icon={social} activity="social" hours={15} last_week={5} />
-        <Card icon={selfCare} activity="selfCare" hours={0} last_week={1} />
+        <div className="cards">
+          <Card icon={work} activity="work" hours={32} last_week={10} />
+          <Card icon={play} activity="play" hours={2} last_week={3} />
+          <Card icon={study} activity="study" hours={3} last_week={24} />
+          <Card icon={exercise} activity="exercise" hours={11} last_week={22} />
+          <Card icon={social} activity="social" hours={15} last_week={5} />
+          <Card icon={selfCare} activity="selfCare" hours={0} last_week={1} />
+        </div>
       </div>
     </div>
   );
