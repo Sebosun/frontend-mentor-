@@ -30,6 +30,11 @@
     margin: 0; /* Remove margins */
   }
 
+  li:hover {
+    cursor: pointer;
+    color: white;
+  }
+
   &__top {
     background: $blue;
     border-radius: 10px;
